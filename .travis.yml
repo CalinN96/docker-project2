@@ -21,9 +21,9 @@ after_success:
    
    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
    
-   - docker push project2-client
-   - docker push project2-nginx
-   - docker push project2-server
-   - docker push project2-worker
+   - docker push calinn96/project2-client
+   - docker push calinn96/project2-nginx
+   - docker push calinn96/project2-server
+   - docker push calinn96/project2-worker
 
 
