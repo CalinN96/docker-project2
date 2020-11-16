@@ -14,10 +14,10 @@ script:
 
 
 after_success:
-   - docker build -t project2-client ./client
-   - docker build -t project2-nginx ./nginx
-   - docker build -t project2-server ./server
-   - docker build -t project2-worker ./worker
+   - docker build -t calinn96/project2-client ./client
+   - docker build -t calinn96/project2-nginx ./nginx
+   - docker build -t calinn96/project2-server ./server
+   - docker build -t calinn96/project2-worker ./worker
    
    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
    
